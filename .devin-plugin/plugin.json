@@ -1,6 +1,6 @@
 {
-  "name": "alanna-workflow",
-  "version": "1.0.1",
-  "description": "Alanna Tempest's personal Devin workflow rules (branches, PRs, review follow-ups, refactor hygiene)",
-  "author": { "name": "Alanna Tempest", "email": "alanna@modal.com" }
+  "name": "kathir-workflow",
+  "version": "1.0.0",
+  "description": "Kathir Meyyappan's personal Devin workflow rules (branches, PRs, review follow-ups, refactor hygiene, etc.)",
+  "author": { "name": "Kathir Meyyappan", "email": "kathir@modal.com" }
 }
