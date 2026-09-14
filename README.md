@@ -1,12 +1,10 @@
-# alanna-workflow
+# kathir-workflow
 
-Alanna's personal Devin plugin. Ported from the "Personal Workflows" knowledge notes.
+Kathir Meyyappan's personal Devin plugin. Intentionally small; grows as needed.
 
-- `AGENTS.md` — always-on: `alanna/` branch prefix, draft PRs.
-- `rules/pull-requests.md` — PR description style and test-plan check.
+- `AGENTS.md` — always-on: `kathir/` branch prefix, pointer to the rules.
+- `rules/pull-requests.md` — terse PR descriptions and a required test plan.
 - `rules/post-review-changes.md` — no scope-expanding pushes to reviewed PRs.
-- `rules/no-mixed-refactors.md` — keep refactors and functionality changes in separate PRs.
+- `rules/no-mixed-refactors.md` — refactors and functionality changes go in separate PRs.
 
-- `skills/pr-checklist` — `/alanna-workflow:pr-checklist`, runs the checklist explicitly.
-
-Install: Settings → Personal → Plugins, add `alannnna/devin-plugin` as a required plugin.
+Install: Settings → Personal → Plugins, add `kathirmeyyappan/devin-instructions` as a required plugin.

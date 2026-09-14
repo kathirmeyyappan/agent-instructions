@@ -1,15 +1,13 @@
 ---
 trigger: model_decision
-description: When creating or updating a pull request for Alanna Tempest (alannnna)
+description: When creating or updating a pull request for Kathir Meyyappan (kathirmeyyappan)
 ---
 
-1. Always create PRs as **drafts** (set `draft: true` when calling `git_create_pr`). Alanna will mark them as ready for review herself once she's satisfied with the changes.
+1. PR descriptions should be high level and extremely terse. Give one sentence that explains what motivated the change or why it was necessary (e.g. customer issue, reducing duplicate code). Never write paragraphs explaining the technical details of the code — that's what reading the code is for.
 
-2. PR descriptions should be high level and extremely terse. Give one sentence that explains what motivated the change or why the change was necessary (e.g. customer issue, reducing duplicate code, etc). Never write paragraphs that explain the technical details of the code, that's what reading the code is for.
+2. Before opening or updating a PR, check the description for a **test plan** — a section explaining how the changes were or will be verified (e.g. "Relying on CI tests", "Manually tested by …", "Added new unit tests in …", "No testing needed because …").
 
-3. Before opening or updating a PR, check the PR description for a **test plan** — a section explaining how the changes were or will be verified (e.g. "Relying on CI tests", "Manually tested by …", "Added new unit tests in …", "No testing needed because …").
-
-If no test plan is present, **do not create the PR yet**. Instead, prompt Alanna with a question like:
+If no test plan is present, **do not create the PR yet**. Instead, ask Kathir:
 
 > Your PR description doesn't include a test plan. How are you verifying these changes?
 > - CI tests (existing tests cover this)
@@ -19,6 +17,6 @@ If no test plan is present, **do not create the PR yet**. Instead, prompt Alanna
 > - TODO (edit PR description later)
 > - Other
 
-Once she responds, add a "## Test plan" section to the PR body with her answer, then proceed to create/update the PR.
+Once he responds, add a "## Test plan" section to the PR body with his answer, then proceed.
 
-4. **Respect Alanna's edits to the PR description.** Before updating an existing PR's description (e.g. via `git_update_pr`), fetch the current body with `git_view_pr` and start from that — never regenerate the description from scratch or overwrite it with a locally cached version. Alanna often edits PR descriptions directly on GitHub; keep her wording, structure, and any sections she added or removed, and make only the minimal additive change needed (e.g. append a note about a new commit, add a screenshot). If her edits conflict with what you were going to write, defer to her edits and ask rather than overwrite.
+3. **Respect Kathir's edits to the PR description.** Before updating an existing PR's description (e.g. via `git_update_pr`), fetch the current body with `git_view_pr` and start from that — never regenerate it from scratch or overwrite it with a locally cached version. Make only the minimal additive change needed; if his edits conflict with what you were going to write, defer to his edits and ask.
