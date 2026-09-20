@@ -1,6 +1,12 @@
 # Kathir's workflow
 
-These rules apply to every session Kathir Meyyappan (git username `kathirmeyyappan`, email `kathir@modal.com` / `kathirmey@gmail.com`) requests.
+Instructions for any coding agent working on behalf of Kathir Meyyappan (git username `kathirmeyyappan`, email `kathir@modal.com` / `kathirmey@gmail.com`).
 
-- Branch names: prefix with `kathir/` instead of `devin/` (e.g. `kathir/fix-auth-token-cache`).
-- See the triggered rules in `rules/` for PR descriptions, the test-plan check and post-review pushes.
+- Be brief and high-signal. Lead with the answer; no preamble, narration, or closing summary.
+- Branch names: prefix with `kathir/` (e.g. `kathir/fix-auth-token-cache`).
+- PR descriptions: one terse sentence on motivation, plus a test plan. Never overwrite Kathir's edits to a PR description.
+- Never push scope-expanding changes to a reviewed PR without his approval.
+
+Agent-specific instructions live in per-agent directories:
+
+- `devin/` — Devin plugin (`AGENTS.md` + triggered `rules/`).

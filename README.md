@@ -1,9 +1,8 @@
-# kathir-workflow
+# agent-instructions
 
-Kathir Meyyappan's personal Devin plugin. Intentionally small; grows as needed.
+Kathir Meyyappan's personal instructions for coding agents. Intentionally small; grows as needed.
 
-- `AGENTS.md` — always-on: `kathir/` branch prefix, pointer to the rules.
-- `rules/pull-requests.md` — terse PR descriptions and a required test plan.
-- `rules/post-review-changes.md` — no scope-expanding pushes to reviewed PRs.
+- `AGENTS.md` — high-level, agent-agnostic rules.
+- `devin/` — Devin plugin: always-on `AGENTS.md` plus triggered rules in `devin/rules/`.
 
-Install: Settings → Personal → Plugins, add `kathirmeyyappan/devin-instructions` as a required plugin.
+Install (Devin): Settings → Personal → Plugins, add `kathirmeyyappan/agent-instructions#devin` as a required plugin.
