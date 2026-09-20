@@ -1,0 +1,11 @@
+{
+  "name": "agent-instructions",
+  "owner": { "name": "Kathir Meyyappan", "email": "kathir@modal.com" },
+  "plugins": [
+    {
+      "name": "kathir-workflow",
+      "source": "./claude",
+      "description": "Kathir Meyyappan's personal workflow rules (brevity, branch naming, PR descriptions, review follow-ups)."
+    }
+  ]
+}

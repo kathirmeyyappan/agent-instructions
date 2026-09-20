@@ -1,0 +1,15 @@
+{
+  "description": "Load Kathir's always-on workflow preferences at session start.",
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "cat \"${CLAUDE_PLUGIN_ROOT}/always-on.md\""
+          }
+        ]
+      }
+    ]
+  }
+}
