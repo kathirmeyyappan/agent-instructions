@@ -1,6 +1,6 @@
 {
   "name": "kathir-workflow",
   "version": "1.0.0",
-  "description": "Kathir Meyyappan's personal Devin workflow rules (branches, PRs, review follow-ups, refactor hygiene, etc.)",
+  "description": "Kathir Meyyappan's personal Devin workflow rules (branches, PRs, review follow-ups, refactor hygiene, Modal expertise, etc.)",
   "author": { "name": "Kathir Meyyappan", "email": "kathir@modal.com" }
 }

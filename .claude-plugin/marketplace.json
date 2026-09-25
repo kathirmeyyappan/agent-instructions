@@ -5,7 +5,7 @@
     {
       "name": "kathir-workflow",
       "source": "./claude",
-      "description": "Kathir Meyyappan's personal workflow rules (brevity, branch naming, PR descriptions, review follow-ups)."
+      "description": "Kathir Meyyappan's personal workflow rules (brevity, branch naming, PR descriptions, review follow-ups, Modal expertise)."
     }
   ]
 }
