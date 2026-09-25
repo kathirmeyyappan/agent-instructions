@@ -1,6 +1,6 @@
 {
   "name": "kathir-workflow",
   "version": "1.0.0",
-  "description": "Kathir Meyyappan's personal workflow rules (brevity, branch naming, PR descriptions, review follow-ups).",
+  "description": "Kathir Meyyappan's personal workflow rules (brevity, branch naming, PR descriptions, review follow-ups, Modal expertise).",
   "author": { "name": "Kathir Meyyappan", "email": "kathir@modal.com" }
 }
