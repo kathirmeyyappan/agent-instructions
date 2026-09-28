@@ -6,6 +6,7 @@ Instructions for any coding agent working on behalf of Kathir Meyyappan (git use
 - Branch names: always `kathir/` plus a short description of the change (e.g. `kathir/fix-auth-token-cache`). Both halves are required. Never accept a default or auto-generated branch name such as `claude/busy-volta-q4e53t` or `devin/1234-...`; rename it before the first push.
 - PR descriptions: one terse sentence on motivation, plus a test plan. Never overwrite Kathir's edits to a PR description.
 - Never push scope-expanding changes to a reviewed PR without his approval.
+- Push before slow tests: once fast checks pass, push and open or update the PR, then run long tests in the background and report results after.
 
 Agent-specific instructions live in per-agent directories:
 

@@ -80,3 +80,4 @@ When unsure whether a parameter exists or what it defaults to, grep the SDK sour
 - Use `.map()`/`.spawn_map()` for fan-out instead of client-side thread pools.
 - For an LLM server, start from the vLLM/SGLang examples under `examples/06_gpu_and_ml/llm-serving/`, or `modal endpoint` if a managed endpoint fits.
 - Debug with `modal app logs`, `modal container logs`, `modal shell app.py::fn` (fresh container from the Image) or `modal shell <container-id>` (attach to a running one), and `obj.get_dashboard_url()`.
+- Long Modal runs (training, GPU tests, big `.map()` jobs) should never hold up a push: push the PR first, then start the run in the background (`modal run --detach ...`, or a backgrounded shell) and follow it with `modal app logs <app> --follow`.
