@@ -9,16 +9,18 @@ Kathir Meyyappan's personal instructions for coding agents. Intentionally small;
 
 ## Install
 
-**Codex** (one-time setup; no checkout to manage):
+**Codex desktop**: ask Codex to install the `codex/` plugin from this GitHub repository as a user-level plugin, then review and trust its SessionStart and SubagentStart hooks when prompted. No working checkout is needed.
+
+**Codex CLI** (optional):
 
 ```sh
 codex plugin marketplace add kathirmeyyappan/agent-instructions
-codex plugin add kathir-workflow@agent-instructions
+codex plugin add kathir-workflow@kathir-codex
 ```
 
 Restart Codex, then review and trust the plugin's startup hooks when prompted. Until trusted, Codex skips the always-on instructions. The plugin applies across projects and includes Modal, pull request, and post-review skills. Codex manages its cached files; no working checkout is required. Lifecycle hooks require a supported local Codex runtime and do not run in cloud-orchestrated ChatGPT Work.
 
-To refresh from GitHub later: `codex plugin marketplace upgrade agent-instructions`.
+To refresh from GitHub later: `codex plugin marketplace upgrade kathir-codex`.
 
 **Devin**: Settings → Personal → Plugins, add `kathirmeyyappan/agent-instructions#devin` as a required plugin.
 
