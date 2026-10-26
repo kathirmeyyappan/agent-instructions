@@ -4,9 +4,21 @@ Kathir Meyyappan's personal instructions for coding agents. Intentionally small;
 
 - `AGENTS.md` — high-level, agent-agnostic rules.
 - `claude/` — Claude Code plugin: always-on preferences plus model-invoked skills in `claude/skills/`.
+- `codex/` — Codex plugin: always-on preferences plus task-specific skills.
 - `devin/` — Devin plugin: always-on `AGENTS.md` plus triggered rules in `devin/rules/`.
 
 ## Install
+
+**Codex** (one-time setup; no checkout to manage):
+
+```sh
+codex plugin marketplace add kathirmeyyappan/agent-instructions
+codex plugin add kathir-workflow@agent-instructions
+```
+
+Restart Codex, then review and trust the plugin's startup hooks when prompted. Until trusted, Codex skips the always-on instructions. The plugin applies across projects and includes Modal, pull request, and post-review skills. Codex manages its cached files; no working checkout is required. Lifecycle hooks require a supported local Codex runtime and do not run in cloud-orchestrated ChatGPT Work.
+
+To refresh from GitHub later: `codex plugin marketplace upgrade agent-instructions`.
 
 **Devin**: Settings → Personal → Plugins, add `kathirmeyyappan/agent-instructions#devin` as a required plugin.
 

@@ -10,4 +10,5 @@ Instructions for any coding agent working on behalf of Kathir Meyyappan (git use
 Agent-specific instructions live in per-agent directories:
 
 - `claude/` — Claude Code plugin (always-on preferences + model-invoked `skills/`).
+- `codex/` — Codex plugin (always-on preferences + task-specific `skills/`).
 - `devin/` — Devin plugin (`AGENTS.md` + triggered `rules/`).

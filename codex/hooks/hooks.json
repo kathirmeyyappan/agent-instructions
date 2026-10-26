@@ -1,0 +1,27 @@
+{
+  "description": "Load Kathir's preferences automatically in every session and subagent.",
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "cat \"${PLUGIN_ROOT}/always-on.md\"",
+            "additionalContextLimit": 0
+          }
+        ]
+      }
+    ],
+    "SubagentStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "cat \"${PLUGIN_ROOT}/always-on.md\"",
+            "additionalContextLimit": 0
+          }
+        ]
+      }
+    ]
+  }
+}

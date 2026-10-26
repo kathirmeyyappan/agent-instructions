@@ -1,0 +1,21 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "kathir-workflow",
+  "version": "0.1.0",
+  "description": "Kathir's always-on coding preferences and task-specific skills.",
+  "author": {
+    "name": "Kathir Meyyappan"
+  },
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Kathir Workflow",
+        "shortDescription": "Kathir's coding preferences",
+        "longDescription": "Always-on workflow preferences and Modal, pull request, and post-review skills for Kathir Meyyappan.",
+        "developerName": "Kathir Meyyappan",
+        "category": "Productivity"
+      },
+      "hooks": "./hooks/hooks.json"
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "name": "agent-instructions",
+  "interface": {
+    "displayName": "Kathir's agent instructions"
+  },
+  "plugins": [
+    {
+      "name": "kathir-workflow",
+      "source": {
+        "source": "local",
+        "path": "./codex"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}
